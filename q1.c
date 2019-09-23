@@ -1,16 +1,11 @@
 #include<stdio.h>
 int main()
 {
-int x,y;
-for(x=1;x<=5;x++)
-{
-for(y=1;y<=20;y++)
-{
-if((x%2==0)&&(y%2==0))
-printf("0");
-else
-printf("*");
+int a,b,c,d;
+printf("enter the numbers:");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+printf("%-9d \t%-9d",a,b);
+printf("\n%-9d \t%-9d",c,d);
 }
-printf("\n");
-}
-}
+
+

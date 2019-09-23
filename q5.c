@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-int x,y;
-for(x=0;x<=4;x++)
-{
-for(y=0;y<=19;y++)
-{
-if((x%2==0)||(y%5==0))
-printf("*");
-else
-printf("0");
+float a,b,c,d,e,f,vector1,vector2,dot_product;
+printf("enter the numbers:");
+scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);
+printf("vector1: %0.0fi + %0.0fj + %0.0fk",a,b,c);
+printf("\nvector2: %0.0fi + %0.0fj + %0.0fk",d,e,f);
+dot_product=(a*d)+(b*e)+(c*f);
+printf("\n%0.0f",dot_product);
 }
-printf("\n");
-}
-}
+
+
+
+

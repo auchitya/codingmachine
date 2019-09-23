@@ -1,16 +1,13 @@
 #include<stdio.h>
 int main()
 {
-int x,y;
-for(x=0;x<=5;x++)
-{
-for(y=0;y<=29;y++)
-{
-if((x%2!=0)&&((y%3==0)||(y%5==0)))
-printf("*");
-else
-printf("0");
+float x1,y1,x2,y2,a,b;
+printf("enter the numbers:");
+scanf("%f%f%f%f",&x1,&y1,&x2,&y2);
+a=(x1+x2)/2;
+b=(y1+y2)/2;
+printf("\n(%f,%f)",a,b);
 }
-printf("\n");
-}
-}
+
+
+

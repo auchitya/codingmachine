@@ -1,30 +1,19 @@
 #include<stdio.h>
-void main()
+int main()
 {
-    int i,j,m=6;
-
-    for(i=0;i<3;i++)
-    {       for(j=0;j<20;j++)
-            {
-                printf("*");
-            }
-    printf("\n");
-    }
-
-    for(i=0;i<6;i++)
-    {
-        for(j=0;j<20;j++)
-        {
-            if((i+j<5) || (j>m))
-            {
-                printf("*");
-            }
-            else
-            {
-                printf("0");
-            }
-        }
-    printf("\n");
-    m++;
-    }
+float a,b,c,d,complex1,complex2,e,f;
+printf("enter the numbers:");
+scanf("%f%f%f%f",&a,&b,&c,&d);
+printf("complex1: %0.4f + %0.5fi",a,b);
+printf("\ncomplex2: %0.6f + %0.6fi",c,d);
+e=((a*c)+(b*d))/((c*c)+(d*d));
+f=((b*c)-(a*d))/((c*c)+(d*d));
+printf("\n%f \t%f",e,f);
+printf("\ndivision of complex numbers is: %f + %fi",e,f);
 }
+
+
+
+
+
+
